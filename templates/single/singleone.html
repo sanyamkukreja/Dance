@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>django template language</title>
+<style>
+    body{
+        background-color:blue;
+    }
+
+</style>
+</style>
+</head>
+<body>
+<!--{% if op|length>=1 %}
+<h3>hello {{op}} a</h3>
+{% endif %}-->
+<!--<h1>{{'a'}}</h1>
+<p>My first paragraph.</p>
+<h3>intro:{{name}} watch:{{time}} seats:{{avl}}</h3>
+<h4>last:{{action|truncatewords:3}}</h4>
+<h2>{{popo|date:'D d M Y'}}</h2>
+<h1>{{p|floatformat:3}}</h1> -->
+{% if op %}
+<h3>hello {{op}}</h3>
+{% elif st %}
+<h2> hii{{st}} </h2> 
+{% else %}
+<h3>no course available</h3>
+{% endif %}
+
+</body>
+</html>

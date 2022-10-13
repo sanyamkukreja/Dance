@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>django template language</title>
+<style>
+    body{
+        background-color:blue;
+    }
+</style>
+</style>
+</head>
+<body>
+{% for name in names reversed %}
+{{forloop.counter}}{{name}}
+{% endfor %}
+{% for key,value in entry.items%}
+{{key}}=={{value}}
+</body>
+</html>
